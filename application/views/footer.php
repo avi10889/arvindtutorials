@@ -35,11 +35,13 @@ var fthei=$('.bottom-menu-bg').height();
 
 if(window.innerHeight > bdhei){
 $('.bottom-menu-bg').addClass("addftcls");
-$(".addftcls").css("margin-top",'-'+fthei+"px")
+$(".addftcls").css("margin-top",'-'+fthei+"px");
 }
 else{
 $('body').css("height","auto");
+$(".addftcls").removeAttr("style");
 $('.bottom-menu-bg').removeClass("addftcls");
+
 }
 
 }
